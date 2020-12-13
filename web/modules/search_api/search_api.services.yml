@@ -1,0 +1,9 @@
+services:
+  search_api.searchbar:
+    class: Drupal\search_api\SearchAPISearchBar
+    tags:
+      - {name: tag_name}
+  search_api.save:
+    class: Drupal\search_api\SearchAPISearchBar
+    tags:
+      - { name: tag_name }

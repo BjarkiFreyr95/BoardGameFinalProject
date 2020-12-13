@@ -1,0 +1,12 @@
+<?php
+
+function search_api_help($route_name, \Drupal\Core\Routing\RouteMatchInterface  $routeMatch) {
+  //$service = \Drupal::service('search_api.searchbar');
+
+  switch($route_name) {
+    case 'help.page.search_api':
+      $output = '<h3> Test help page </h3>';
+      return $output;
+    default:
+  }
+}

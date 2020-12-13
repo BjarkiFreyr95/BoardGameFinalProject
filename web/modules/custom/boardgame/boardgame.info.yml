@@ -1,0 +1,5 @@
+name: Board game
+type: module
+package: custom
+description: 'board games'
+core: 8.x

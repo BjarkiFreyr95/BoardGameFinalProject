@@ -1,0 +1,22 @@
+search_api.repeat:
+  path: '/apisearch'
+  defaults:
+    _controller: Drupal\search_api\Controller\SearchAPIController::searchAPI
+    _title: 'Api search'
+  requirements:
+    _permission: 'access content'
+
+search_api.save:
+  path: '/boardgames/{param}'
+  defaults:
+    _controller: Drupal\search_api\Controller\BoardGameController::content
+    _title: 'Add a boardgame'
+  requirements:
+    _permission: 'access content'
+search_api.test:
+  path: '/search123'
+  defaults:
+    _form: Drupal\search_api\Form\SearchForm
+    _title: 'Search api'
+  requirements:
+    _permission: 'access content'
